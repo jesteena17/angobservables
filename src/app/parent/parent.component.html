@@ -1,0 +1,7 @@
+<p>
+  parent works!
+</p>
+<label for="">Employee name</label>
+<input type="text" #pcomponent (keyup)="0"    ><br>
+<p>value of child component :  {{childData}} </p>
+<app-child  [parentData]="pcomponent.value"  (childEvent)="childData=$event"></app-child>

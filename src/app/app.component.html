@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welc  {{ title }}!
+ 
+  </h1>
+<a routerLink="/">Home</a>|
+<a routerLink="/user">User</a>|
+<a routerLink="/parent">Parent</a>|
+<a routerLink="/employee">Employee</a>|
+<a [routerLink]="['employee',100]">Employee100</a>|
+<a [routerLink]="['employee','sanu']">Employeesanu</a>|
+<a routerLink="/observable">Observable</a>|
+
+
+
+
+
+ <!--  <app-employee></app-employee>     -->
+
+
+<router-outlet></router-outlet>
+<!--
+<input type="text" [(ngModel)]="name">
+
+<button (click)="changeName()" >click to change</button>
+
+-->
