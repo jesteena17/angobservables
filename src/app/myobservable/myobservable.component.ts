@@ -48,7 +48,8 @@ this.myObservableSubscription=myObservable.subscribe(
 
 
   ngOnDestroy(){
-    this.numberSubscription.unsubscribe();
+   // this.numberSubscription.unsubscribe();
     this.myObservableSubscription.unsubscribe();
   }
 }
+

@@ -1,0 +1,28 @@
+<p>
+  angular-form works!
+</p>
+
+<div class="container">
+  <h1>Hero Form</h1>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="name">username</label>
+      <input type="text" class="form-control" id="name" ngModel name="username" >
+    </div>
+
+    <div class="form-group">
+      <label for="alterEgo">email</label>
+      <input type="email" class="form-control" id="alterEgo" ngModel name="email">
+    </div>
+
+<div class="form-group">
+  <label for="power">secret question</label>
+  <select class="form-control" id="power" ngModel name="secret">
+    <option  value="pet">ur fav pet?</option>
+    <option  value="teacher">ur fav teacher?</option>
+  </select>
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>

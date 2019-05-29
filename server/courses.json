@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "id": "200",
+      "courseName": "java",
+      "courseDuration": "4 months",
+      "courseEligibility": "bca",
+      "courseFee": "34999"
+    },
+    {
+      "id": "300",
+      "courseName": ".net",
+      "courseDuration": "1 month",
+      "courseEligibility": "bsc",
+      "courseFee": "25000"
+    },
+    {
+      "id": "400",
+      "courseName": "mongodb",
+      "courseDuration": "4 months",
+      "courseEligibility": "be",
+      "courseFee": "5000"
+    }
+  ]
+}

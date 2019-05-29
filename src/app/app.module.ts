@@ -4,12 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { MyobservableComponent } from './myobservable/myobservable.component';
+import { AngularFormComponent } from './angular-form/angular-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CourseComponent } from './course/course.component';
+import { AddcourseComponent } from './addcourse/addcourse.component';
+import { UpdateCourseComponent } from './update-course/update-course.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +24,19 @@ import { MyobservableComponent } from './myobservable/myobservable.component';
     ChildComponent,
     HomeComponent,
     UserComponent,
-    MyobservableComponent
+    MyobservableComponent,
+    AngularFormComponent,
+    CourseComponent,
+    AddcourseComponent,
+    UpdateCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

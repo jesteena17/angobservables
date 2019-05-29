@@ -1,0 +1,29 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Course</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="courseId">Course Id:</label>
+        <input type="courseId" formControlName="id" placeholder="Course Id" name="id" class="form-control" id="courseId">
+      </div>
+      <div class="form-group">
+        <label for="courseName">Course Name:</label>
+        <input type="courseName" formControlName="courseName" placeholder="Course Name" name="courseName" class="form-control" id="courseName">
+      </div>
+       <div class="form-group">
+        <label for="courseDuration">Course Duration:</label>
+        <input type="courseDuration" formControlName="courseDuration" placeholder="Course Duration" name="courseDuration" class="form-control" id="courseDuration">
+      </div>
+       <div class="form-group">
+        <label for="courseEligibility">Course Eligibility:</label>
+        <input type="courseEligibility" formControlName="courseEligibility" placeholder="Course Eligibility" name="courseEligibility" class="form-control" id="courseEligibility">
+      </div>
+      <div class="form-group">
+        <label for="courseFee">Course Fee:</label>
+        <input type="courseFee" formControlName="courseFee" placeholder="Course Fee" name="courseFee" class="form-control" id="courseFee">
+      </div>
+  
+  
+  
+      <button class="btn btn-success">Add Course</button>
+    </form>
+  </div>
